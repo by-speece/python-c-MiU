@@ -43,6 +43,9 @@ def menu():
             print("5.#Druk offsetowy")
             print("6.#Aparaty Fotograficzne")
             print("7.#Przesył w Drukarni")
+            print("8.#Krajarki i Gilotyny")
+            print("9.#Plotery Solwentowe")
+            print("10.#Pozyskiwanie materiałów cyfrowych i analogowych")
             spistresci = input()
 
             if spistresci == "1":
@@ -79,6 +82,26 @@ def menu():
                 cls()
                 console.print(przesyl_w_drukarni)
                 monit()
+
+            if spistresci == "8":
+                cls()
+                console.print(krajarki_i_gilotyny)
+                monit()
+
+            if spistresci == "9":
+                cls()
+                console.print(plotery_solwentowe)
+                monit()
+            if spistresci == "10":
+                cls()
+                console.print(pozyskiwanie_materiaw_cyfrowych_i_analogowych)
+                monit()
+
+            if spistresci == "11":
+                cls()
+                console.print(techniki_druku_z_tonera)
+                monit()
+
         spis()
     if choice == "2":
         menu()

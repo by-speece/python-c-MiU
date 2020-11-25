@@ -16,23 +16,35 @@ class color:
    END = '\033[0m'
 #Biblioteka Właściwa
 console = Console()
-with open ("teksty/wstep.md") as readme:
+with open ("resources/wstep.md") as readme:
     wstep = Markdown(readme.read())
 
-with open ("teksty/dokumentacja.md") as readme:
+with open ("resources/dokumentacja.md") as readme:
     dokumentacja = Markdown(readme.read())
 
-with open ("teksty/drukowanie_natryskowe.md") as readme:
+with open ("resources/drukowanie_natryskowe.md") as readme:
     drukowanie_natryskowe = Markdown(readme.read())
 
-with open ("teksty/fleksografia.md") as readme:
+with open ("resources/fleksografia.md") as readme:
     fleksografia = Markdown(readme.read())
 
-with open ("teksty/druk_offsetowy.md") as readme:
+with open ("resources/druk_offsetowy.md") as readme:
     druk_offsetowy = Markdown(readme.read())
 
-with open ("teksty/aparaty_fotograficzne.md") as readme:
+with open ("resources/aparaty_fotograficzne.md") as readme:
     aparaty_fotograficzne = Markdown(readme.read())
 
-with open ("teksty/przesyl_w_drukarni.md") as readme:
+with open ("resources/przesyl_w_drukarni.md") as readme:
     przesyl_w_drukarni = Markdown(readme.read())
+
+with open ("resources/krajarki_i_gilotyny.md") as readme:
+    krajarki_i_gilotyny = Markdown(readme.read())
+
+with open ("resources/plotery_solwentowe.md") as readme:
+    plotery_solwentowe = Markdown(readme.read())
+
+with open ("resources/pozyskiwanie_materiaw_cyfrowych_i_analogowych.md") as readme:
+    pozyskiwanie_materiaw_cyfrowych_i_analogowych = Markdown(readme.read())
+
+with open ("resources/techniki_druku_z_tonera.md") as readme:
+    techniki_druku_z_tonera = Markdown(readme.read())
