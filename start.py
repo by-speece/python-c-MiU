@@ -54,6 +54,9 @@ def menu():
                 enter = input(color.RED + color.BOLD + "Naciśnij Enter by wrócić do Spisu Treści...." + color.END)
                 if enter == '':
                     spis()
+                else:
+                    print("Nieznana Akcja")
+                    monit()
             cls()
             console.print(spistresci_table)
             spistresci = input(color.RED + color.BOLD + "Wybierz numer i naciśnij Enter:" + color.END)
@@ -148,6 +151,9 @@ def menu():
                 monit()
             if spistresci == "19":
                 cls()
+                menu()
+            else:
+                print("Nieznana Akcja")
                 menu()
         spis()
     if choice == "2":
