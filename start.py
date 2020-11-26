@@ -1,7 +1,9 @@
 #Biblioteki
 import os
+import rich
 from rich.console import Console
 from rich.markdown import Markdown
+
 #Import Bibliotek Własnych
 from tekst import *
 from spistresci import *
@@ -144,6 +146,9 @@ def menu():
                 cls()
                 console.print(aparaty_fotograficzne)
                 monit()
+            if spistresci == "19":
+                cls()
+                menu()
         spis()
     if choice == "2":
         cls()

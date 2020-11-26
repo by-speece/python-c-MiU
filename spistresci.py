@@ -58,6 +58,9 @@ spistresci_table.add_row(
 spistresci_table.add_row(
     "17", "Aparaty fotograficzne"
 )
+spistresci_table.add_row(
+    "18", "Powrót do Menu Głównego"
+)
 
 
 console.print(spistresci_table)
