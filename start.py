@@ -4,6 +4,8 @@ from rich.console import Console
 from rich.markdown import Markdown
 #Import Bibliotek Własnych
 from tekst import *
+from spistresci import *
+from menu import *
 #Style tekstu
 class color:
    PURPLE = '\033[95m'
@@ -19,13 +21,29 @@ class color:
 #Podsystem Czyszczenia
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
-
+#Podsystem Powrotu
+def powrot_menu():
+    powrot = input((color.RED + color.BOLD + "Naciśnij Enter by wrócić do Menu...." + color.END))
+    if enter == '':
+        menu()
+    else:
+        print("Nieznana Akcja")
+        powrot_menu()
+#Wiadomośc powitalna
+def startx():
+    cls()
+    console.print(starttext)
+    startxenter = input(color.RED + color.BOLD + "Naciśnij Enter by zaakceptować" + color.END)
+    if startxenter == '':
+        menu()
+    else:
+        print("Nie zaakceptowałeś licencji!")
+        startx()
 #Program Właściwy
 def menu():
     cls()
-    print(color.CYAN + color.BOLD + "==========Zbiór Wiedzy Poligraficznej==========" + color.END)
-    print("1.Spis Treści \n2.O projekcie \n3.O Mnie \n4.O programie")
-    choice = input()
+    console.print(menu_table)
+    choice = input(color.RED + color.BOLD + "Wybierz numer i naciśnij Enter:" + color.END)
 
     if choice == "1":
         def spis():
@@ -35,57 +53,47 @@ def menu():
                 if enter == '':
                     spis()
             cls()
-            print(color.CYAN + color.BOLD + "==========Spis Treści==========" + color.END)
-            print("1.#Wstęp")
-            print("2.#Dokumentacja techniczna maszyn i urządzeń.")
-            print("3.#Drukowanie natryskowe")
-            print("4.#Fleksografia")
-            print("5.#Druk offsetowy")
-            print("6.#Aparaty Fotograficzne")
-            print("7.#Przesył w Drukarni")
-            print("8.#Krajarki i Gilotyny")
-            print("9.#Plotery Solwentowe")
-            print("10.#Pozyskiwanie materiałów cyfrowych i analogowych")
-            spistresci = input()
+            console.print(spistresci_table)
+            spistresci = input(color.RED + color.BOLD + "Wybierz numer i naciśnij Enter:" + color.END)
 
             if spistresci == "1":
-                cls()
-                console.print(wstep)
-                monit()
-
-            if spistresci == "2":
                 cls()
                 console.print(dokumentacja)
                 monit()
 
+            if spistresci == "2":
+                cls()
+                console.print(wykorzystywanie_komputerow_w_poligrafii)
+                monit()
+
             if spistresci == "3":
                 cls()
-                console.print(drukowanie_natryskowe)
+                console.print(oprogramowanie_wykorzystywane_w_prepressie)
                 monit()
 
             if spistresci == "4":
                 cls()
-                console.print(fleksografia)
+                console.print(przygotowanie_plikow_do_druku)
                 monit()
 
             if spistresci == "5":
                 cls()
-                console.print(druk_offsetowy)
+                console.print(przesyl_w_drukarni)
                 monit()
 
             if spistresci == "6":
                 cls()
-                console.print(aparaty_fotograficzne)
+                console.print(cyfrowe_maszyny_drukujce)
                 monit()
 
             if spistresci == "7":
                 cls()
-                console.print(przesyl_w_drukarni)
+                console.print(techniki_druku_z_tonera)
                 monit()
 
             if spistresci == "8":
                 cls()
-                console.print(krajarki_i_gilotyny)
+                console.print(drukowanie_natryskowe)
                 monit()
 
             if spistresci == "9":
@@ -94,20 +102,59 @@ def menu():
                 monit()
             if spistresci == "10":
                 cls()
-                console.print(pozyskiwanie_materiaw_cyfrowych_i_analogowych)
+                console.print(podloza_w_druku_solwentowym)
                 monit()
 
             if spistresci == "11":
                 cls()
-                console.print(techniki_druku_z_tonera)
+                console.print(podloza_drukowe)
                 monit()
 
+            if spistresci == "12":
+                cls()
+                console.print(druk_offsetowy)
+                monit()
+
+            if spistresci == "13":
+                cls()
+                console.print(fleksografia)
+                monit()
+
+            if spistresci == "14":
+                cls()
+                console.print(sitodruk)
+                monit()
+
+            if spistresci == "15":
+                cls()
+                console.print(druk_personalizowany)
+                monit()
+
+            if spistresci == "16":
+                cls()
+                console.print(krajarki_i_gilotyny)
+                monit()
+
+            if spistresci == "17":
+                cls()
+                console.print(pozyskiwanie_materiaw_cyfrowych_i_analogowych)
+                monit()
+
+            if spistresci == "18":
+                cls()
+                console.print(aparaty_fotograficzne)
+                monit()
         spis()
     if choice == "2":
-        menu()
+        cls()
+        console.print(wstep)
+        powrot_menu()
     if choice == "3":
-        menu()
+        cls()
+        console.print(o_mnie)
+        powrot_menu()
     if choice == "4":
-        menu()
-
-menu()
+        cls()
+        console.print(gplv3)
+        powrot_menu
+startx()
