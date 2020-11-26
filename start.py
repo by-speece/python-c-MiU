@@ -26,7 +26,7 @@ def cls():
 #Podsystem Powrotu
 def powrot_menu():
     powrot = input((color.RED + color.BOLD + "Naciśnij Enter by wrócić do Menu...." + color.END))
-    if enter == '':
+    if powrot == '':
         menu()
     else:
         print("Nieznana Akcja")
@@ -161,5 +161,5 @@ def menu():
     if choice == "4":
         cls()
         console.print(gplv3)
-        powrot_menu
+        powrot_menu()
 startx()
