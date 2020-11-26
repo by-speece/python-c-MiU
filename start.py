@@ -68,12 +68,12 @@ def menu():
 
             if spistresci == "2":
                 cls()
-                console.print(wykorzystywanie_komputerow_w_poligrafii)
+                console.print(oprogramowanie_wykorzystywane_w_prepressie)
                 monit()
 
             if spistresci == "3":
                 cls()
-                console.print(oprogramowanie_wykorzystywane_w_prepressie)
+                console.print(wykorzystywanie_komputerow_w_poligrafii)
                 monit()
 
             if spistresci == "4":
@@ -107,12 +107,12 @@ def menu():
                 monit()
             if spistresci == "10":
                 cls()
-                console.print(podloza_w_druku_solwentowym)
+                console.print(podloza_drukowe)
                 monit()
 
             if spistresci == "11":
                 cls()
-                console.print(podloza_drukowe)
+                console.print(podloza_w_druku_solwentowym)
                 monit()
 
             if spistresci == "12":

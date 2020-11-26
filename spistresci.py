@@ -29,7 +29,7 @@ spistresci_table.add_row(
     "7", "Techniki druku z tonera"
 )
 spistresci_table.add_row(
-    "8", "Techniki druku cyfrowego"
+    "8", "Drukowanie Natryskowe"
 )
 spistresci_table.add_row(
     "9", "Plotery"
@@ -38,28 +38,31 @@ spistresci_table.add_row(
     "10", "Podłoża do druku cyfrowego"
 )
 spistresci_table.add_row(
-    "11", "Druk offsetowy"
+    "11", "Podłoża do druku solwentowego"
 )
 spistresci_table.add_row(
-    "12", "Fleksografia"
+    "12", "Druk offsetowy"
 )
 spistresci_table.add_row(
-    "13", "Sitodruk"
+    "13", "Fleksografia"
 )
 spistresci_table.add_row(
-    "14", "Druk spersonalizowany"
+    "14", "Sitodruk"
 )
 spistresci_table.add_row(
-    "15", "Gilotyny i wykrawarki"
+    "15", "Druk personalizowany"
 )
 spistresci_table.add_row(
-    "16", "Pozyskiwanie materiałów do druku"
+    "16", "Krajarki i gilotyny"
 )
 spistresci_table.add_row(
-    "17", "Aparaty fotograficzne"
+    "17", "Pozyskiwanie materiałów cyfrowych i analogowych "
 )
 spistresci_table.add_row(
-    "18", "Powrót do Menu Głównego"
+    "18", "Aparaty Fotograficzne"
+)
+spistresci_table.add_row(
+    "19", "Powrót do Menu Głównego"
 )
 
 
